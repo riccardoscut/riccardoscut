@@ -6,7 +6,7 @@
 - Soy una persona seria.
 
 ##Mi foto
-![Riccardo](/Users/giovanna/Pictures/Riccardo1983.jpg)
+![Riccardo](/Users/giovanna/GIT/Riccardo1983.jpg)
 - Barcellonma bella
 - Mare e montagna
 
