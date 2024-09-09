@@ -1,4 +1,4 @@
-#Bienvenido su mi perfil
+ù#Bienvenido su mi perfil
 - Quiero mejorar mis competencias de AI y ML.
 - El Recinto Moderninsta.
 - Soy psicologo de la communicaccion y he trabajado como AI modeler.
@@ -6,7 +6,7 @@
 - Soy una persona seria.
 
 ##Mi foto
-![Riccardo](/Users/giovanna/Pictures/Riccardo 1983.jpg)
+![Riccardo](/Users/giovanna/Pictures/Riccardo1983.jpg)
 - Barcellonma bella
 - Mare e montagna
 
