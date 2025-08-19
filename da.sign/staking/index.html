@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signature Staking - A trusted Cardano Blockchain Network Node where you can delegate your ADA and earn 4% ROI.">
+    <meta name="keywords" content="Signature Staking, Cardano, ADA, Blockchain, Staking, Cryptocurrency">
+    <meta name="author" content="Signature Team">
+    <title>Signature Staking | Cardano Blockchain Network Node</title>
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Signature Staking | Cardano Blockchain Network Node">
+    <meta property="og:description" content="Delegate your ADA to SIGN and earn 4% ROI with a trusted Cardano Blockchain Network Node.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://staking.da-sign.com">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Advent Pro', sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            letter-spacing: 0.03em;
+            color: #e0e0e0;
+            background-color: #0c0c1e;
+            background-image: linear-gradient(to bottom, #0c0c1e, #121230);
+            overflow-x: hidden;
+            font-size: 1.05rem;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            background: white;
+            border-radius: 10px;
+            margin: 1rem auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            color: #0c0c1e;
+            background: linear-gradient(to right, #0c0c1e, #121230);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(12, 12, 30, 0.3);
+        }
+
+        header p {
+            color: #0c0c1e;
+        }
+
+        .logo {
+            margin: 2rem auto;
+            max-width: 200px;
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Advent Pro', sans-serif;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 4.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #7f8eff, #64c9ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(127, 142, 255, 0.3);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin: 2.5rem 0 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #7f8eff;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            color: #64c9ff;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        a {
+            color: #64c9ff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px dotted rgba(100, 201, 255, 0.4);
+        }
+
+        a:hover {
+            color: #7f8eff;
+            border-bottom-color: #7f8eff;
+        }
+
+        section {
+            margin: 4rem 0;
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .keyboard-keys {
+            display: flex;
+            justify-content: center;
+            margin: 2.5rem 0;
+            gap: 0.8rem;
+        }
+
+        .key {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(145deg, #090919, #131335);
+            color: #64c9ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-family: 'Advent Pro', sans-serif;
+            border: 1px solid rgba(127, 142, 255, 0.2);
+        }
+
+        .key:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .intro-text {
+            text-align: center;
+            margin: 3rem auto;
+            max-width: 800px;
+            line-height: 2;
+            font-size: 1.3rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            margin: 3.5rem 0;
+        }
+
+        .benefit-card {
+            padding: 2rem;
+            border-radius: 12px;
+            background: linear-gradient(145deg, #101022, #090919);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(127, 142, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(127, 142, 255, 0.3);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            margin: 3.5rem 0;
+        }
+
+        .step-card {
+            padding: 2rem;
+            text-align: left;
+            position: relative;
+            background: linear-gradient(145deg, #101022, #090919);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(127, 142, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(127, 142, 255, 0.3);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #7f8eff, #64c9ff);
+            color: #090919;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(127, 142, 255, 0.4);
+            font-family: 'Advent Pro', sans-serif;
+        }
+
+        .step-card ul {
+            margin: 1rem 0;
+        }
+
+        .step-card li {
+            margin-bottom: 0.5rem;
+            list-style-type: none;
+            padding-left: 1.5em;
+            position: relative;
+        }
+
+        .step-card li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #64c9ff;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3.5rem;
+            margin: 3.5rem 0;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            gap: 1.8rem;
+            padding: 1.5rem;
+            background: linear-gradient(145deg, #101022, #090919);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(127, 142, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(127, 142, 255, 0.3);
+        }
+
+        .team-photo {
+            width: 110px;
+            height: 110px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid rgba(127, 142, 255, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .team-info {
+            flex: 1;
+        }
+
+        .pool-details {
+            text-align: center;
+            margin: 3.5rem 0;
+            background: linear-gradient(145deg, #101022, #090919);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(127, 142, 255, 0.1);
+        }
+
+        .pool-details p {
+            margin-bottom: 1rem;
+        }
+
+        .pool-id {
+            font-family: 'Advent Pro', sans-serif;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.8rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            word-break: break-all;
+            font-size: 0.9rem;
+            color: #64c9ff;
+            border: 1px solid rgba(100, 201, 255, 0.2);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin: 2.5rem 0;
+        }
+
+        .social-link {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(145deg, #101022, #090919);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(127, 142, 255, 0.1);
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(145deg, #7f8eff, #64c9ff);
+            box-shadow: 0 8px 20px rgba(127, 142, 255, 0.4);
+        }
+
+        .social-link:hover svg {
+            fill: #090919;
+        }
+
+        .social-link svg {
+            fill: #64c9ff;
+            transition: fill 0.3s;
+        }
+
+        .tagline {
+            text-align: center;
+            margin: 4rem 0;
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #7f8eff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 92%;
+            }
+
+            h1 {
+                font-size: 3.2rem;
+            }
+
+            h2 {
+                font-size: 1.9rem;
+            }
+
+            .team {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .sign-image {
+                max-width: 280px;
+            }
+
+            .team-member {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .team-photo {
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Updated media queries for more reliable responsive layout */
+        @media (min-width: 600px) {
+            .benefits, .steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .benefits, .steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .sign-image {
+            max-width: 420px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            margin: 2.5rem auto;
+            display: block;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(127, 142, 255, 0.2);
+        }
+
+        .sign-image:hover {
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SIGNATURE STAKING</h1>
+            <div class="logo">
+                <img src="/logo.png" alt="Signature Staking Logo">
+            </div>
+
+            <div class="keyboard-keys">
+                <img src="/sign.jpeg" alt="SIGN" class="sign-image">
+            </div>
+
+            <div class="intro-text">
+                <p>This is Signature Staking, one of the 1st Cardano Blockchain Network Nodes.</p>
+                <p>The native cryptocurrency of the Cardano platform is called ADA.</p>
+                <p>If you hold Ada, don't wait:</p>
+                <p>delegate to SIGN and earn your 4% ROI.</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="benefits">
+        <div class="container">
+            <div class="benefits">
+                <div class="benefit-card">
+                    <h3>Transparency and Trust</h3>
+                    <p>Signature is a project dedicated to enhancing transparency and trust in the financial world through blockchain technology.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Secure and Reliable</h3>
+                    <p>Using the Cardano blockchain, Signature enables secure and reliable block staking, contributing to a decentralized system where accountability is central.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Commitment to Fairness</h3>
+                    <p>The project embodies a commitment to fairness—a principle of acting with integrity and prioritizing the needs of users and the broader community.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Fair and Transparent Future</h3>
+                    <p>By building a trustworthy network, Signature aims to reshape finance for a more fair and transparent future.</p>
+                </div>
+            </div>
+
+            <div class="tagline">
+                <p>"...simple as a [SIGN], powerful as a Signature."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to">
+        <div class="container">
+            <h2>How to... in 4 easy steps</h2>
+
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Buy ADA from your favorite exchange</h3>
+                    <p>If you want some discounts use my referral link for:</p>
+                    <ul>
+                        <li><a href="https://www.binance.com/it/register?ref=RB0J7K7X" rel="nofollow noopener noreferrer" target="_blank">Binance.com (10%/10%)</a></li>
+                        <li><a href="https://crypto.com/app/n3xdtue6we" rel="nofollow noopener noreferrer" target="_blank">Crypto.com (50$ bonus)</a></li>
+                        <li><a href="https://www.coinbase.com/join/france_zc" rel="nofollow noopener noreferrer" target="_blank">Coinbase.com (10$ BTC bonus)</a></li>
+                    </ul>
+                    <p>Or without referral link you can buy Ada with:</p>
+                    <ul>
+                        <li><a href="https://www.binance.com/en" rel="nofollow noopener noreferrer" target="_blank">Binance.com</a></li>
+                        <li><a href="https://crypto.com/exchange" rel="nofollow noopener noreferrer" target="_blank">Crypto.com</a></li>
+                        <li><a href="https://www.kraken.com" rel="nofollow noopener noreferrer" target="_blank">Kraken.com</a></li>
+                        <li><a href="https://www.kucoin.com/ucenter/signup?rcode=1s6g2eR" rel="nofollow noopener noreferrer" target="_blank">KuCoin.com</a></li>
+                        <li><a href="https://www.bitfinex.com" rel="nofollow noopener noreferrer" target="_blank">Bitfinex.com</a></li>
+                        <li><a href="https://coinranking.com/coin/qzawljRxB5bYu+cardano-ada/exchanges" rel="nofollow noopener noreferrer" target="_blank">more</a></li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Send your ADA to your wallet</h3>
+                    <p>Download <a href="https://daedaluswallet.io/en/" rel="nofollow noopener noreferrer" target="_blank">Daedalus Wallet</a> and install last version (7.1.0):</p>
+                    <ul>
+                        <li><a href="https://update-cardano-mainnet.iohk.io/daedalus-7.1.0-72909-mainnet-5472147d9-x86_64-darwin.pkg?t=1742410568668" rel="nofollow noopener noreferrer" target="_blank">macOS 64 bit</a></li>
+                        <li><a href="https://update-cardano-mainnet.iohk.io/daedalus-7.1.0-72909-mainnet-5472147d9-x86_64-windows.exe?t=1742410568680" rel="nofollow noopener noreferrer" target="_blank">Windows 8.1 and 10, 64 bit</a></li>
+                        <li><a href="https://update-cardano-mainnet.iohk.io/daedalus-7.1.0-72909-mainnet-5472147d9-x86_64-linux.bin?t=1742410568678" rel="nofollow noopener noreferrer" target="_blank">Linux 64 bit</a></li>
+                    </ul>
+                    <p>It could take 1 to 24 hrs.</p>
+                    <p>by <a href="https://iohk.io" rel="nofollow noopener noreferrer" target="_blank">IOHK</a></p>
+                    <p>Download <a href="https://yoroi-wallet.com/#/" rel="nofollow noopener noreferrer" target="_blank">Yoroi</a> (available for mobile):</p>
+                    <ul>
+                        <li><a href="https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb" rel="nofollow noopener noreferrer" target="_blank">Extension Chrome Browser</a></li>
+                        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/yoroi/" rel="nofollow noopener noreferrer" target="_blank">Add-On for Firefox</a></li>
+                        <li><a href="https://microsoftedge.microsoft.com/addons/detail/yoroi/akoiaibnepcedcplijmiamnaigbepmcb" rel="nofollow noopener noreferrer" target="_blank">Extension Microsoft Edge</a></li>
+                        <li><a href="https://apps.apple.com/us/app/emurgos-yoroi-cardano-wallet/id1447326389" rel="nofollow noopener noreferrer" target="_blank">iOS</a> / <a href="https://play.google.com/store/apps/details?id=com.emurgo&hl=en" rel="nofollow noopener noreferrer" target="_blank">Android</a> The Cardano Wallet</li>
+                    </ul>
+                    <p>by <a href="https://emurgo.io" rel="nofollow noopener noreferrer" target="_blank">EMURGO</a></p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Look for [SIGN] – Signature Staking</h3>
+                    <p>"After setting up your wallet, find [SIGN] in stakepool/stake pool search tab and start delegating, only delegated wallets will earn rewards."</p>
+                    <p>Important: your ADA are always available for you to send, spend or move.</p>
+                    <p>Please check out our community resources for last breaking news:</p>
+                    <ul>
+                        <li><a href="https://twitter.com/Cardano" rel="nofollow noopener noreferrer" target="_blank">Twitter Cardano Community</a></li>
+                        <li><a href="https://www.reddit.com/r/cardano/" rel="nofollow noopener noreferrer" target="_blank">Reddit The Home of Cardano</a></li>
+                        <li><a href="https://www.youtube.com/c/YourCardanoUpdate/featured" rel="nofollow noopener noreferrer" target="_blank">YouTube Your Cardano Update</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCdsCDVHKVIuTlziDW7Wg3NQ" rel="nofollow noopener noreferrer" target="_blank">YouTube The Cardano Effect</a></li>
+                        <li><a href="https://forum.cardano.org" rel="nofollow noopener noreferrer" target="_blank">Forum Cardano</a></li>
+                        <li><a href="https://www.facebook.com/CardanoFoundation/" rel="nofollow noopener noreferrer" target="_blank">Facebook Cardano Foundation</a></li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Earn 5.5% yearly while doing simply n...</h3>
+                    <p>Thanks to <a href="https://cardano.org" rel="nofollow noopener noreferrer" target="_blank">Cardano</a> and the <a href="https://cardano.org/ouroboros/" rel="nofollow noopener noreferrer" target="_blank">PoS protocol Ouroboros</a>, every time a delegated stakepool creates a new block, you as an Ada holder get rewards that represents the fee effort.</p>
+                    <p>Check the <a href="https://cardano.org/calculator/?calculator=delegator" rel="nofollow noopener noreferrer" target="_blank">calculator rewards</a>, go, get through the <a href="https://github.com/input-output-hk" rel="nofollow noopener noreferrer" target="_blank">GitHub Source Code</a>!</p>
+                    <p>Signature Staking only charge a very low margin to be able to maintain the service.</p>
+                    <p>Let's make it right, delegate to [SIGN].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>SIGNATURE TEAM</h2>
+
+            <div class="team">
+                <div class="team-member">
+                    <img src="/riccardo.png" alt="Riccardo - Linux server Administrator" class="team-photo">
+                    <div class="team-info">
+                        <h3>Riccardo</h3>
+                        <p>Linux server Administrator</p>
+                        <p>Language Data Analyst | Psychotherapist | Natural Language AI Master | Peer Reviewer</p>
+                        <p>Barcelona-based</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pool-details">
+        <div class="container">
+            <h2>POOL DETAILS</h2>
+
+            <div class="pool-details">
+                <p>— Staking Mainnet —</p>
+                <p>Signature is live since ITN epoch #813 (January, 16, 2020)</p>
+                <p>— Ticker: [SIGN] —</p>
+                <p>Pool Node ID:</p>
+                <div class="pool-id">bbc236d1986b35cb7ae8f896dc0121a6052019a469ac6b36e838c765</div>
+                <p>PoolId:</p>
+                <p><a href="https://pooltool.io/pool/bbc236d1986b35cb7ae8f896dc0121a6052019a469ac6b36e838c765/" target="_blank" rel="nofollow noopener noreferrer">https://pooltool.io/pool/bbc236d1986b35cb7ae8f896dc0121a6052019a469ac6b36e838c765/</a></p>
+                <p>Adapools:</p>
+                <p><a href="https://adapools.org/pool/bbc236d1986b35cb7ae8f896dc0121a6052019a469ac6b36e838c765/" target="_blank" rel="nofollow noopener noreferrer">https://adapools.org/pool/bbc236d1986b35cb7ae8f896dc0121a6052019a469ac6b36e838c765/</a></p>
+                <p>Cardano Explorer:</p>
+                <p><a href="https://explorer.cardano.org/en" target="_blank" rel="nofollow noopener noreferrer">https://explorer.cardano.org/en</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/signaturestaking/" class="social-link" aria-label="GitHub" rel="nofollow noopener noreferrer" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.237 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.reddit.com/user/SignatureStaking" class="social-link" aria-label="Reddit" rel="nofollow noopener noreferrer" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+                    </svg>
+                </a>
+                <a href="https://x.com/CardanoPoolSign" class="social-link" aria-label="Twitter" rel="nofollow noopener noreferrer" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100070041372677" class="social-link" aria-label="Facebook" rel="nofollow noopener noreferrer" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <p>email: <a href="mailto:cardanostaking@da-sign.com">cardanostaking@da-sign.com</a></p>
+        </div>
+    </footer>
+
+    <!-- Schema.org markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Signature Staking",
+        "description": "A trusted Cardano Blockchain Network Node where you can delegate your ADA and earn 4% ROI.",
+        "url": "https://staking.da-sign.com",
+        "logo": "https://staking.da-sign.com/logo.png",
+        "email": "cardanostaking@da-sign.com",
+        "founder": [
+            {
+                "@type": "Person",
+                "name": "Riccardo",
+                "jobTitle": "Linux server Administrator",
+                "description": "Language Data Analyst, Psychotherapist, Natural Language AI Master, Peer Reviewer",
+                "image": "https://staking.da-sign.com/riccardo.jpg"
+            }
+        ],
+        "sameAs": [
+            "https://github.com/signaturestaking/",
+            "https://x.com/CardanoPoolSign",
+            "https://www.facebook.com/profile.php?id=100070041372677",
+            "https://www.reddit.com/user/SignatureStaking"
+        ]
+    }
+    </script>
+
+    <!-- Load snarkdown for markdown parsing -->
+    <script src="/snarkdown-2.0.0.min.js"></script>
+
+    <script>
+      const fiveMinutesInSeconds = 5 * 60; // 300 seconds
+      // Calculate a value that changes every 5 minutes
+      const cacheBustValue = (Date.now() / 1000 / fiveMinutesInSeconds) | 0; 
+    
+      document.write(`<script src="/contents.js?cachebust=${cacheBustValue}"><\/script>`);
+    </script>
+
+    <!-- Content loading and application script -->
+    <script src="/script.js"></script>
+
+    <script data-goatcounter="https://staking.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
